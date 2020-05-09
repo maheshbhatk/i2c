@@ -26,15 +26,14 @@ reg clk;
 reg rst;
 reg enable;
 wire scl;
-wire [31:0]unique1;
-wire [31:0]unique2;
+
 wire [7:0]vtg;
 wire sda;
 reg SDA;
 reg direction=0;
 //assign sda=direction?SDA:1'bz;
 
-module1 m1(clk,rst,enable,scl,unique1,unique2,vtg,sda);
+module1 m1(clk,rst,enable,scl,vtg,sda);
 
 initial
 clk=1'b1;
