@@ -36,7 +36,7 @@ reg direction=1;
 reg SDA;
 assign sda=direction?SDA:1'bZ;   
 reg [7:0] state; 
-reg [7:0] address;                  //VOLTAGE SENSOR ADDRESS including read bit
+reg [7:0] address;                  // ADDRESS including read bit
 reg [7:0] count;
 reg ack;
 reg received_bit;
@@ -48,8 +48,7 @@ parameter STATE_IDLE=0,
           STATE_RACK=5,
           STATE_STOP=6;
           
-//reg scl_enable=0;   
-//assign scl=(scl_enable==0)?1:clk;       
+     
 
 always@(negedge clk)
 begin
