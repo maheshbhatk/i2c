@@ -25,8 +25,6 @@ module module1(
     input rst,
     input enable,
     output reg scl,
-    output reg [31:0] unique1,
-    output reg [31:0] unique2,
     output reg [7:0] vtg=0,
     inout sda
     );
